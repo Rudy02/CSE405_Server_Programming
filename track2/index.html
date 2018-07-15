@@ -1,0 +1,20 @@
+    <script src="ajax.js"></script>
+
+<HTML>
+    
+    <h1> Track 2 Assigment</h1>
+    <p>
+         Page Views: <span id="page_views"></span>
+    </p>
+</HTML>
+
+    <script>
+    /* global ajax*/
+    ajax('page_views.php', null, function(responseObject) {
+    document.getElementById('page_views').innerHTML = responseObject.counter;
+    });
+    </script>
+   
+
+
+    
